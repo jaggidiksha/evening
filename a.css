@@ -1,0 +1,35 @@
+h1{
+	color:red;
+	
+}
+span{
+	background-color:pink;
+}
+#para1{
+	color:red;
+}
+.para2{
+	color:yellow;
+}
+*{
+	background-color:black;
+	font-size:30px;
+}
+ul>li{
+	color:white;
+}
+ul{
+	background-color:grey;
+}
+.div1{
+	display:flex;
+}
+.div2 img{
+	height:300px;
+	width:300px;
+}
+
+.div2{
+	display:flex;
+	justify-content:center;
+}
