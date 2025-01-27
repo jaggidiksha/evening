@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">hello html</p>
+    <button onclick='document.getElementById("para").innerHTML="hello javascript"'>update text</button><br><br>
+
+    <label>Password</label>
+    <input type="password" id="pass"><br><br>
+    <label>Confirm password</label>
+    <input type="password" id="confirmpass">
+    <br><br>
+    <button onclick="same()">submit</button>
+    <script>
+
+        function same(){
+  
+       let a=document.getElementById("pass").value
+
+       let b=document.getElementById("confirmpass").value
+
+       if(a==b){
+        alert("thankyou for submitting!")
+       }else{
+        alert("passwords are not matching!")
+       }
+
+
+        }
+
+        // dom: is a technology with the help of which we can manipulate the html structure , we can chnage or modify any id ,class ,attribute name and tags with the help of dom 
+
+        // document.getElementById("").innerHTML
+        // document.getElementById("").value
+    </script>
+</body>
+</html>
