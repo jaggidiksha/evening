@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul>
+        <li class="items">mango</li>
+        <li class="items">apple</li>
+        <li class="items">guava</li>
+        <li class="items">litchi</li>
+        <li class="items">pineapple</li>
+        <li class="items">banana</li>
+    </ul> -->
+
+    <div class="mydiv">
+        <p class="text">hello html</p>
+        <p  id="txt">welcome to page !</p>
+        <p class="text">bye html</p>
+    </div>
+    <script>
+
+let paragraph=document.querySelector(".text")
+console.log(paragraph.textContent)
+
+let a=document.querySelector("#txt")
+console.log(a.textContent)
+
+let data=document.querySelectorAll(".text")
+
+data.forEach(function(paragraph){
+console.log(paragraph.textContent)
+})
+
+    //   let a=  document.getElementsByClassName("items")
+
+    //   console.log(a[1].textContent)
+    //   a[1].textContent="orange"
+    //   a[1].style.backgroundColor="orange"
+
+    //  let list= document.getElementsByTagName("li")
+
+    // console.log( list[5].textContent)
+    // list[5].style.backgroundColor="yellow"
+
+
+    </script>
+</body>
+</html>
