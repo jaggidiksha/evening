@@ -34,5 +34,28 @@ headings :6 ,bold ,closing tags , headings size decreses in downward direction
 html is not case sensitive
 
 -->
+
+<ul>
+    <li class="a">hello</li>
+    <li class="a">hello</li>
+    <li class="a">hello</li>
+    <li class="a">hello</li>
+</ul>
+<button id="btn">hide items</button>
+<script>
+button=document.querySelector("#btn")
+items=document.querySelectorAll(".a")
+
+areitemsvisible =true;
+button.addEventListener("click",function(){
+items.forEach ((item)=>{
+item.style.display=areitemsvisible?"none":"block"
+})
+button.textContent=areitemsvisible?"show items":"hide items"
+    areitemsvisible=!areitemsvisible
+})
+
+
+</script>
 </body>
 </html>
