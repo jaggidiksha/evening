@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TO-DO LIST</h1>
+    <input type="text" id="myinput">
+    <button onclick="newelement()">Add</button>
+    <ul  id="myul">
+
+    </ul>
+
+    <script>
+        function newelement(){
+
+
+           inputvalue= document.getElementById("myinput").value;
+
+           if(inputvalue===""){
+            alert("provide a to do first!")
+           }
+
+          li= document.createElement("li")
+         textnode=document.createTextNode(inputvalue)
+          li.appendChild(textnode)
+
+
+  dltbtn= document.createElement("button")
+ dltbtn.appendChild( document.createTextNode("delete"))
+ li.appendChild(dltbtn)
+
+ dltbtn.onclick=function(){
+    let item=this.parentElement
+    item.remove();
+ }
+
+editbtn=document.createElement("button")
+editbtn.appendChild(document.createTextNode("edit"))
+li.appendChild(editbtn)
+
+editbtn.onclick=function(){
+   let newtext= prompt("enter new to -do")
+
+   if(newtext !==null && newtext!==""){
+    textnode.nodeValue=newtext
+   }
+}
+
+
+
+          document.getElementById("myul").appendChild(li)
+
+        
+
+        // document.createElement: new element can be created with the help of this method
+        
+
+        // document.createTextNode():text written inside elements 
+
+
+        // appendChild : insert the elements in specific position
+
+        }
+    </script>
+</body>
+</html>
