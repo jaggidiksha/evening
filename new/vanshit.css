@@ -1,0 +1,18 @@
+h2{
+	color:blue;
+	background-color:pink;
+}
+.para1{
+	color:green;
+	background-color:yellow;
+}
+#para2{
+	color:orange;
+	background-color:grey;
+}
+*{
+	
+	background-color:black;
+	font-size:30px;
+	color:white;
+}
