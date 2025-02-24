@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ajax 
+        // c  r  u   d
+
+        //  fetch :all the operations that we perform with ajax can be performed with fetch as well  and it was also introduced in es6 as well promises were also introduced in es6
+
+        // syntax :
+
+        // fetch(url) -------------------->promise
+
+        // fetch(url).then()(type of data)-------------->promise
+
+        // fetch(url).then().then()
+        // first then() determines which type of data u want to fetch
+        // type of data :
+        // text()
+        // json,array of objects :[
+        //         {
+        // key:value 
+        //         },
+        //     {
+
+        //     },
+        // ]
+
+        // fetch(url)
+        // .then(function(response){
+        //     return response.type()
+        // }).then(function(data){
+        //       console.log(data)
+        // })
+
+
+        // fetch("content/file.txt")
+        // .then(function(response){
+        //    return response.text()
+        // }).then(function(data){
+        // console.log(data)
+        // })
+// in es6 arrow functions were also introduced 
+// fetch("content/file.txt")
+// .then((response)=>{
+//  return response.text()
+// }).then((data)=>{
+// console.log(data)
+// })
+
+fetch("content/file.txt")
+.then(response=>response.text())
+.then(data=>console.log(data))
+.catch(error=>console.log(error))
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response=>response.json())
+.then(data=>console.log(data))
+.catch(error=>console.log(error))
+
+// async function a(){
+//     return "hello"
+// }   
+// console.log(a())
+
+// async function a(){
+//     return "hello"
+// }   
+// a().then((data)=>{
+//     console.log(data)
+// })
+
+
+// async function b(){
+//     console.log("a")
+//    await  console.log("b")
+//     console.log("c")
+
+// }
+// b()
+// console.log("d")
+// console.log("e")
+    </script>
+</body>
+
+</html>
