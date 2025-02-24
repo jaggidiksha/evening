@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            text-shadow: 30px 60px 20px blue;
+        }
+        div{
+            height:200px;
+            width:300px;
+            background-color: bisque;
+            border:2px solid red;
+            box-shadow: 10px 20px 30px green;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+        h1::before{
+            content: "*";
+        }
+
+        h1::after{
+            content:"$"
+        } */
+
+        div{
+            height:200px;
+            width:300px;
+            background-color: aquamarine;
+            /* transition: width 1s; */
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function:ease-in ;
+            transition-delay: 2s; */
+            transition:background-color 4s linear 1s,transform 2s;
+        }
+        div:hover{
+            background-color: brown;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>hello html</h1> -->
+
+   <center>
+    <div>
+
+    </div>
+   </center>
+    <!-- <button>clickme!</button> -->
+
+    <!--
+    pseudo classes :it defines the specific state of an element and always called with  :
+    pseudo elements : it adds extra features to existing elements and always called with ::
+
+transition-property:width;
+transition-duration:4s;
+    transition-timing-function :linear;
+    linear :same speed 
+    ease-in :slow start
+    ease-out :slow end
+    ease-in-out : slow start and slow end 
+    transition-delay:2s;
+    
+    -->
+</body>
+</html>
