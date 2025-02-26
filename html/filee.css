@@ -1,0 +1,35 @@
+h1{
+    color:red;
+}
+span{
+    background-color: black;
+   
+}
+.para1{
+    color: aqua;
+    background-color: #ef3c3c;
+}
+#para2{
+    color: #ef3c3c;
+    background-color: aqua;
+}
+*{
+    background-color: aquamarine;
+    font-size: 30px;
+}
+.box1{
+    display: flex;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+}
+.box2 img{
+    height: 200px;
+    width: 300px;
+}
+/* p{
+    color: orange;
+    background-color: blue;
+    font-size: 40px;
+} */
