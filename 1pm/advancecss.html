@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            height:100px;
+            width:100px;
+            background-color: aquamarine;
+            border:2px solid blue;
+            transition: width 3s linear 1s,transform 2s;
+        }
+        div:hover{
+            width:200px;
+            transform: rotateZ(60deg);
+        } */
+         .container{
+            height:400px;
+            border:2px solid red;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap;
+            gap:20px; */
+            flex-flow: row wrap;
+            /* justify-content:space-evenly ; */
+            /* align-items:center; */
+        
+
+         }
+         .box{
+            width:100px;
+            border:2px solid green;
+            margin:10px; 
+         }
+         #box1{
+            order:1;
+            flex-basis: 200px;
+         }
+         #box2{
+            order:2;
+            flex-grow: 1;
+         }
+         #box4{
+            flex-basis: 450px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box">box3</div>
+        <div class="box"  id="box4">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+
+    </div>
+    <!--
+    transform : 2D transform
+    translate():px
+    translateX()
+    translateY()
+    scale:2
+    scaleX()
+    scaleY()
+    skew
+    rotate
+
+    3D transform
+    rotateX()
+    rotateY()
+    rotateZ()
+
+
+    CSS flexbox 
+    
+    -->
+</body>
+</html>
