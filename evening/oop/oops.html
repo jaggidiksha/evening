@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // objects are that which store data as key value pair
+
+        // object can be created in two ways
+
+        // object literal
+        // let obj={
+        //     name:"john",
+        //     age:19,
+        //     occupation:"developer"
+        // }
+        // document.write(obj.name+"<br>"+obj.age+"<br>")
+        // object constructor
+        // let emp=new Object()
+        // emp.name="depole"
+        // emp.age=28
+        // emp.occupation="teacher"
+        // document.write(emp.name+"<br>"+emp.age)
+
+
+        // oop :object oriented programming
+        // oop revolves around creating objects and using them to st. your code ,js is not purely oops based but it supports the principles of oops
+
+
+
+        // class is a blueprint of object
+        // class is a template for creating objects
+        // constructor method: it is used to initail the properties
+
+
+        // encapsulation :it acts as a capsule that hides the inner working and only shows us the necessary parts
+
+        // class Car {
+        //     constructor(brand) {
+        //         this.brand = brand
+        //     }
+
+        //     getbrand() {
+        //         return this.brand
+        //     }
+        // }
+        // let mycar = new Car("toyota")
+        // document.write(mycar.getbrand())
+
+
+        // abstraction :it hides the compelx details of our code and only expose the essential parts
+
+        //      class CoffeeMachine{
+
+        // constructor(){
+        //     this.wateramount=0
+        // }
+
+        // fillwater(amount){
+        //     this.wateramount+=amount
+        // }
+
+
+        // boilwater(){
+        //     console.log("water is boiling")
+        // }
+
+        // makecoffee(){
+        //     if(this.wateramount>0){
+        //         this.boilwater()
+        //         console.log("coffee is ready")
+        //     }else{
+        //         console.log("not enough water")
+        //     }
+        // }
+        //      }
+        //     let machine= new CoffeeMachine()
+        //     machine.fillwater(10)
+        //     machine.makecoffee()
+
+
+        //  polymorphism:allows same method to have different implementations in derived classes
+
+        // class Animal{
+        //     speak(){
+        //         console.log("animals make a sound")
+        //     }
+        // }
+        //  class Cat extends Animal{
+        //     speak(){
+        //         console.log("cat meows")
+        //     }
+        //  }
+
+        //  class Dog extends Animal{
+        //     speak(){
+        //         console.log("dog barks")
+        //     }
+        //  }
+
+        // let animal= new Animal()
+        // animal.speak()
+
+        // let cat= new Cat()
+        // cat.speak()
+
+        // let dog= new Dog()
+        // dog.speak()
+
+        //   let animals=  [new Animal(),new Cat(),new Dog()]
+        //   animals.forEach(animal=>animal.speak())
+
+
+        // inheritance : it allows one class to inherit properties and methods from another class 
+
+        // class Animal {
+        //     constructor(name) {
+        //         this.name = name
+        //     }
+        //     speak() {
+        //         console.log(`${this.name} makes a sound`)
+        //     }
+        // }
+
+
+        // class Dog extends Animal {
+        //     speak() {
+        //         console.log(`${this.name} barks`)
+        //     }
+        // }
+        // let pet = new Dog("buddy")
+        // pet.speak()
+
+
+    </script>
+</body>
+
+</html>
