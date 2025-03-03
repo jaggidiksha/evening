@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let zx=["this is a car"]
+        zx=zx[0]
+        let st=""
+        output=[]
+
+
+        for(let i=0;i<zx.length;i++){
+       if(zx[i]===" "){
+        output.push(st)
+        st=""
+       }else{
+        st=st+zx[i]
+       }
+        }
+        output.push(st)
+        console.log(output)
+        // localstorage: is also a client side web storage feature that allows you to store the data as a key value pair,its stoarge limit is upto 5-10 mb only depending upon browser
+
+        // set item in localstorage
+//         localStorage.setItem("username","joh depole")
+//         // get the localstorage item
+//        let a= localStorage.getItem("username")
+// console.log(a)
+
+
+
+// scoping : scoping determines the  visiblity /accessibility of variables in different parts of your code 
+
+// global scoping: variable declared outside of any function or block of code are global variables , global variables are accessible anywhere in the code
+
+// var globalvar="im global variable ";
+// console.log(globalvar)
+// function glo(){
+//     console.log(globalvar)
+// }
+// glo()
+
+// local scoping:variable declared inside any function or block of code are called local variables ,they are accessible in the function or block of code theyare declared in 
+
+// two types of local scoping 
+// functional scope: variables are accessible in the function they are declared in. var are functional scope variables
+
+// function abc(){
+//     var a="im functional scoped"
+//     console.log(a)
+// }
+// abc()
+
+
+
+// block scope:variables are accessible in the block of code they are declared in , let and const are block scope variables
+
+// if(true){
+//     let b="im block scope";
+//     // document.write(b)
+// }
+
+
+
+// closure /lexical scoping :closure in action says that we have two functions, one is outer function and other is innerfunction  , the innerfuntion can access the outerfunction variabels as well as parameters 
+
+// closures were introduced in es6 , arrow functions they were also introduced  in es6 
+
+// const abc=()=>{
+//     // statements
+// }
+// abc()
+
+
+const outerfun=(a)=>{
+    let b=90;
+   const innerfun=()=>{
+let sum=a+b;
+// the sum of two  numbers is 180
+// the sum of two  numbers is  :strings 
+// sum:expression name 
+// strings+expression name: template literals /backticks
+
+// expression name:    ${expression name} :string interpolation 
+
+console.log(`the sum of two numbers is  ${sum}`)
+// console.log("the sum of two numbers is ",sum)
+   }
+innerfun()
+}
+outerfun(90)
+
+    </script>
+</body>
+</html>
