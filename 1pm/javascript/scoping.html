@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // global scope 
+        // var globalvar="im a global";
+        // // console.log(globalvar)
+        // function abc(){
+        //     console.log(globalvar)
+        // }
+        // abc()
+
+
+        // local scope 
+        // function a(){
+        //     var localvar="im a local";
+        //     // console.log(localvar)
+        // }
+        // a()
+        // console.log(localvar)
+
+
+        // if(true){
+        //    let a="data";
+        // //    console.log(a)
+        // }
+        // console.log(a)
+
+        // lexical scoping /closures : (es6) closures in action says that we have two functions one is innerfuntion other one is outerfunction , the innerfuntion can access the variables and parameters from the outerfuntion
+
+        // arrow function :
+        // const functionname=()=>{
+        //    block of code 
+        // }
+        // functionname()
+
+
+        const outerfun = (a) => {
+                 let b=20
+            const innerfun = () => {
+                   let sum=a+b
+                //    the sum of two numbers is 30
+                console.log("the sum of two numbers is ",sum)
+                //  the sum of two numbers is  :strings 
+                //  30 : expression
+                // strings +expression :template literals /backticks
+                // expression name : string interpolarion ${expression name}
+                console.log(`the sum of two numbers is ${sum}`)
+
+            }
+            innerfun()
+
+        }
+        outerfun(10)
+
+
+
+    </script>
+
+</body>
+
+</html>
