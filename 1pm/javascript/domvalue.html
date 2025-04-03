@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>First value</label>
+    <input type="text" id="first"><br>
+    <label>Second value</label>
+    <input type="text" id="second">
+    <button onclick="same()">Click</button>
+
+    <br>
+    <br>
+    first number <input type="number" id="one"><br>
+    second number <input type="number" id="two"><br>
+    <button onclick="add()">+</button><br>
+    <input type="color">
+    <script>
+
+        function add(){
+         let aa=  parseInt( document.getElementById("one").value);
+       let bb= parseInt( document.getElementById("two").value);
+       document.writeln(aa+bb)
+        }
+        function same(){
+         let a=   document.getElementById("first").value;
+        let b= document.getElementById("second").value;
+        if(a==b){
+            alert("Both values are same");
+        }else{
+            alert("Both values are not same");
+        }
+        }
+        // document.getElementById("").value 
+
+        // parseInt : it parses a string and returns an integer 
+        // parse: to resolve a sentence into its components 
+
+
+        // let a=parseInt(" he was 50 years ")
+        // document.writeln(a)
+    </script>
+</body>
+</html>
