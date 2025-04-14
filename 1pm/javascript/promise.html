@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function prom(complete) {
+            return new Promise(function (resolve, reject) {
+                if (complete) {
+                    resolve("success")
+                } else {
+                    reject("fail")
+                }
+            })
+        }
+
+        // let fulfilment = (data) => {
+        //     console.log(data)
+        // }
+
+        // let onrejection = (error) => {
+        //     console.log(error)
+        // }
+
+        // prom(true).then((data) => {
+        //     console.log(data)
+        // })
+        // prom(false).catch((error) => {
+        //     console.log(error)
+        // })
+
+
+        prom(false).then((data) => {
+            console.log(data)
+        }).catch((error) => {
+            console.log(error)
+        })
+    </script>
+</body>
+
+</html>
