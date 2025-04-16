@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validation()">
+        <label>Username</label>
+        <input type="text" id="user" placeholder="enter your name">
+        <span id="userr" style="color: red;font-weight: bold;"></span><br><br>
+    <input type="submit">
+    </form>
+    <script>
+        function validation(){
+                let user=document.getElementById("user").value;
+                if(user ==""){
+                    document.getElementById("userr").innerHTML="please fill the user name "
+                    return false;
+                }
+        }
+//  async function test(){
+//         return "john"
+//      }
+//      console.log(test())
+
+// async function test(){
+//         return "john"
+//      }
+// test().then((result)=>{
+// console.log(result)
+// })
+
+
+// async function abc(){
+// console.log("a")
+// await console.log("b")
+// console.log("c")
+
+// }
+// abc()
+// console.log("d")
+// console.log("e")
+
+// let ary=[12,3,4,5,6]
+// let b=ary.map(test)
+// function test(x){
+// return x+2
+// }
+// document.write(b)
+
+
+// let ar=[
+//     {
+// fname:"john",
+// lname:"doe"
+//     },
+//     {
+// fname:"eric",
+// lname:"doe"
+//     },
+//     {
+// fname:"elie",
+// lname:"doe"
+//     }
+// ]
+//    let b= ar.map(test)
+
+//     function test(x){
+// return x.fname +" "+x.lname
+//     }
+//     document.write(b)
+    </script>
+</body>
+</html>
