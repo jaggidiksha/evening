@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // objects: used to store the key value pair 
+        // object constructor
+        //   let emp=  new Object()
+        //   emp.id=8987
+        //   emp.name="john"
+        //   emp.age=23
+        //   document.write(emp.age)
+        // object literal 
+        // const obj={
+        //     name:"john",
+        //     age: 30,
+        //     occupation:"developer"
+        // }
+        // console.log(obj)
+        // document.write(obj.occupation)
+
+        // every object has an internal property called as prototype
+
+        // prototypal inheritance : it is acheived by linking a prototypal object with an object 
+
+
+        // prototypal object 
+        //     const abc={
+        //        greet:function(){
+        //         console.log(`hello ${this.name}`)
+        //        }
+        //     }
+        // // object
+        //     const a=Object.create(abc)
+        //     a.name="JOHN"
+        //     a.greet()
+
+
+
+
+        // let obj={
+        //     name:"john"
+        // }
+        // console.log(obj)
+
+        // let obj1={
+        //     age:30,
+        //     __proto__:obj
+        // }
+        // console.log(obj1)
+
+
+        // let obj2={
+        //     occupation:"developer",
+        //     __proto__:obj1
+        // }
+        // console.log(obj2)
+
+        // oops:object oriented programmings 
+        // js is not ourely oops based but it supports the principle of oops 
+        // oop revolves around creating objects and using them to structure your code 
+
+        // 4 principles of encapsulation, inheritance, polymorphism, and abstraction
+
+
+        // in oops we do not create an object directly but we create a blueprint of object called class 
+
+        // encapsulation :it acts as a capsule which hides the inner working and only expose the necessary parts 
+
+        //     class Car{
+
+        //      constructor(brand){
+        //         this.brand =brand
+        //      }
+
+        //     getbrand(){
+        //         return this.brand 
+        //      }
+
+        //     }
+
+        //    let mycar= new Car("toyota")
+        //  console.log(  mycar.getbrand() )
+
+
+        // abstraction : abstraction is the principle of simplifying complex systems by modeling classes based on essential properties and behaviors while hiding unnecessary details from the user.
+        // hides the complex details from user and shows the outcome only 
+
+        // class Coffeemachine {
+
+
+        //     constructor() {
+        //         this.wateramount = 0
+        //     }
+
+        //     fillwater(amount) {
+        //         this.wateramount += amount
+        //     }
+
+
+        //     boilwater() {
+        //         console.log("water is boiling...")
+        //     }
+
+        //     makecoffee() {
+        //         if (this.wateramount > 0) {
+        //             this.boilwater()
+        //             console.log("coffee is ready")
+        //         } else {
+        //             console.log("please fill the water first")
+        //         }
+
+        //     }
+
+        // }
+
+        // let coffee=new Coffeemachine()
+        // coffee.fillwater(760)
+        // coffee.makecoffee()
+    </script>
+</body>
+
+</html>
