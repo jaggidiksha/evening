@@ -123,6 +123,54 @@
         // let coffee=new Coffeemachine()
         // coffee.fillwater(760)
         // coffee.makecoffee()
+
+        // polymorphism:it allows same method to have different implementations  in derived classes
+
+        // class Animal{
+        //     speak(){
+        //         console.log("animals make a sound")
+        //     }
+        // }
+
+        // class Cat extends Animal{
+        //     speak(){
+        //         console.log("cat meows")
+        //     }
+        // }
+
+        // class Dog extends Animal{
+        //     speak(){
+        //         console.log("dog barks ")
+        //     }
+
+        // }
+        // let animals=[new Animal(),new Cat(),new Dog()]
+        // animals.forEach(animals=>animals.speak())
+    //    let a= new Animal()
+    //    a.speak()
+
+
+    // inheritance : it allows one object to inherit properties and values from another object 
+
+     class Animal{
+        constructor(name){
+            this.name=name
+        }
+
+        speak(){
+            console.log(`${this.name} makes a sound`)
+        }
+     }
+
+     class Dog extends Animal{
+
+        speak(){
+            console.log(`${this.name} barks`)
+        }
+     }
+
+     let a=new Dog("archie")
+     a.speak()
     </script>
 </body>
 
